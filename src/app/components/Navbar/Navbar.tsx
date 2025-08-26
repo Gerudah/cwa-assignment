@@ -1,9 +1,15 @@
+'use client'
+
 import React from 'react'
 import Styles from './Navbar.module.css'
+import About from '@/app/About/About'
 
-const Navbar = () => {
+const Navbar = ({menuOpen}: {menuOpen: boolean}) => {
+  
   return (
-    <ul className={Styles.Navbar}>
+    <div className={Styles.Navbar}>
+      <p className={menuOpen? Styles.Collapsed : Styles.Title}>CWA Assignment 1</p>
+    <ul className={menuOpen? Styles.List : Styles.Collapsed}>
         <li className={Styles.Items}>Tabs</li>
         <li>|</li>
         <li className={Styles.Items}>Pre-Lab Quaestions</li>
@@ -14,6 +20,7 @@ const Navbar = () => {
         <li>|</li>
         <li className={Styles.Items}>About</li>
     </ul>
+    </div>
   )
 }
 

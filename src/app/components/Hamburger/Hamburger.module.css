@@ -1,0 +1,29 @@
+.burger_bar{
+    width: 3rem;
+    height: 0.3rem;
+    background-color: white;
+    margin: 0.8rem 0;
+    border-radius: 0.2rem;
+    transition: 0.4s;
+}
+
+.Hamburger{
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.burger_bar.clicked:nth-child(1){
+    transform: rotate(-45deg) translate(-0.7rem, 0.6rem);
+    transition: ease-out 0.4s;
+}
+.burger_bar.clicked:nth-child(2){
+    opacity: 0;
+}
+.burger_bar.clicked:nth-child(3){
+    transform: rotate(45deg) translate(-0.7rem, -0.6rem);
+    transition: ease-out 0.4s;
+}

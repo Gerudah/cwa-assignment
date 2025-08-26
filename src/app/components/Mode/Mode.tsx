@@ -1,13 +1,13 @@
 'use client'
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
 import Daisy from '/home/gerudah/repos/cwa-assignment/public/daisy.png'
 import Dahlia from '/home/gerudah/repos/cwa-assignment/public/dahlia.png'
 
 const Mode = () => {
-  const [dark, setDark] = React.useState(false)
+  const [dark, setDark] = useState(false)
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (typeof window !== 'undefined') {
       const root = window.document.documentElement
         if (dark) {

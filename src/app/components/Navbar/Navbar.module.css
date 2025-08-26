@@ -1,11 +1,45 @@
-.Navbar{
+.Navbar {
     flex: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2rem;
     align-items: center;
     font-size: 18px;
     align-items: center;
     justify-content: center;
-    padding-left: -4rem; 
+    padding-left: -4rem;
+}
+
+.List {
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Items{
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.Items:hover {
+    list-style: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Title {
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+}
+
+.Collapsed {
+    align-items: center;
+    display: none;
 }
