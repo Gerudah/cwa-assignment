@@ -11,13 +11,13 @@ const Navbar = ({menuOpen}: {menuOpen: boolean}) => {
       <p className={menuOpen? Styles.Collapsed : Styles.Title}>CWA Assignment 1</p>
     <ul className={menuOpen? Styles.List : Styles.Collapsed}>
         <li className={Styles.Items}>Tabs</li>
-        <li className={Styles.Items}>|</li>
+        <li>|</li>
         <li className={Styles.Items}>Pre-Lab Quaestions</li>
-        <li className={Styles.Items}>|</li>
+        <li>|</li>
         <li className={Styles.Items}>Escape Room</li>
-        <li className={Styles.Items}>|</li>
+        <li>|</li>
         <li className={Styles.Items}>Coding Races</li>
-        <li className={Styles.Items}>|</li>
+        <li>|</li>
         <li className={Styles.Items}>About</li>
     </ul>
     </div>

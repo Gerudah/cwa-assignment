@@ -14,18 +14,23 @@
     flex: auto;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     font-size: 18px;
     align-items: center;
     justify-content: center;
-    padding-left: -4rem;
-    transition:ease-in 0.4s;
 }
 
-.Items {
+.Items{
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.Items:hover {
     list-style: none;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .Title {
