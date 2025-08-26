@@ -1,0 +1,12 @@
+.Header{
+  background: linear-gradient(90deg, #4B006E 0%, #7C3AED 100%);
+  font-size: 24px;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  flex: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
