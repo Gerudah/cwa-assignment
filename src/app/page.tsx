@@ -4,6 +4,8 @@ import React, {useState} from 'react'
 import Header from "./components/Header/Header"
 import About from './About/About'
 import WorkInProgress from './WIP/WorkInProgress'
+import Tabs from './Tabs/Tabs'
+import Footer from './components/Footer/Footer'
 
 export default function Home() {
 
@@ -11,7 +13,7 @@ export default function Home() {
   function renderPage(){
     switch(isSelected){
       case 'tabs':
-        return <WorkInProgress/>;
+        return <Tabs/>;
       case 'pre-lab':
         return <WorkInProgress/>;
       case 'escape':
@@ -28,6 +30,9 @@ export default function Home() {
   return (
     <main>
       <Header isSelected={isSelected} setSelected={setSelected}/>
-      {renderPage()}
+      <div className='page-container'>
+        {renderPage()}
+      </div>
+      <Footer/>
     </main>
 )}

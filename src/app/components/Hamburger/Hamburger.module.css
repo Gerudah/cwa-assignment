@@ -17,13 +17,13 @@
 }
 
 .burger_bar.clicked:nth-child(1){
-    transform: rotate(-45deg) translate(-0.7rem, 0.6rem);
+    transform: rotate(-45deg) translate(-0.5rem, 1.5rem);
     transition: ease-out 0.4s;
 }
 .burger_bar.clicked:nth-child(2){
     opacity: 0;
 }
 .burger_bar.clicked:nth-child(3){
-    transform: rotate(45deg) translate(-0.7rem, -0.6rem);
+    transform: rotate(45deg) translate(0rem, -1rem);
     transition: ease-out 0.4s;
 }
