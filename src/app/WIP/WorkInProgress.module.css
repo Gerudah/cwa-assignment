@@ -1,0 +1,7 @@
+.fill{
+    object-fit: cover;
+}
+.page{
+    width: 100%;
+    height: min-content 100vh;
+}
