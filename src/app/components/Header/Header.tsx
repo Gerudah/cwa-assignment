@@ -6,12 +6,12 @@ import Hamburger from '../Hamburger/Hamburger'
 import Mode from '../Mode/Mode'
 import Navbar from '../Navbar/Navbar'
 
-const Header = () => {
+const Header = ({isSelected, setSelected}:{isSelected: string, setSelected: (key: string) => void}) => {
   const[menuOpen, setMenuOpen] = React.useState(false)
   return (
     <div className={Styles.Header}>
       <Hamburger isOpen={menuOpen} toggleMenu={() => setMenuOpen(!menuOpen)} />
-      <Navbar menuOpen={menuOpen} />
+      <Navbar menuOpen={menuOpen} navbarClick={setSelected}/>
       <Mode/>
     </div>
   )

@@ -1,9 +1,11 @@
 import React from 'react'
-import Image from '/Home/gerudah/repos/cwa-assignment/public/construction.jpg'
+import Image from '../../../public/construction.jpg'
 
 const WorkInProgress = () => {
   return (
-    <div>WorkInProgress</div>
+    <div>
+      <img src={Image.src} alt= 'Page under construction'/>
+    </div>
   )
 }
 

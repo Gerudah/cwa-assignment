@@ -1,8 +1,8 @@
 'use client'
 import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
-import Daisy from '/home/gerudah/repos/cwa-assignment/public/daisy.png'
-import Dahlia from '/home/gerudah/repos/cwa-assignment/public/dahlia.png'
+import Daisy from '../../../../public/daisy.png'
+import Dahlia from '../../../../public/dahlia.png'
 
 const Mode = () => {
   const [dark, setDark] = useState(false)
