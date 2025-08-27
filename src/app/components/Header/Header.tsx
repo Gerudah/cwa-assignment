@@ -9,7 +9,7 @@ import Navbar from '../Navbar/Navbar'
 const Header = ({isSelected, setSelected}:{isSelected: string, setSelected: (key: string) => void}) => {
   const[menuOpen, setMenuOpen] = React.useState(false)
   return (
-    <div className={Styles.Header}>
+    <div className={`${Styles.Header} no-dark`}>
       <Hamburger isOpen={menuOpen} toggleMenu={() => setMenuOpen(!menuOpen)} />
       <Navbar menuOpen={menuOpen} navbarClick={setSelected}/>
       <Mode/>

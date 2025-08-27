@@ -7,13 +7,14 @@ body {
 }
 
 @layer theme {
-    .dark {
+    .dark,
+    .dark *:not(.no-dark, .no-dark *) {
         background-color: #1a3657;
         color: white;
     }
 }
 
-main{
+main {
     flex: auto;
     flex-direction: column;
 }

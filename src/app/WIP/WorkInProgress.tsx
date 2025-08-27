@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../../../public/construction.jpg'
+import Image from '../../../public/construction.png'
 import Style from './WorkInProgress.module.css'
 
 const WorkInProgress = () => {
