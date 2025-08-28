@@ -10,6 +10,7 @@
 .Hamburger{
     cursor: pointer;
     padding-left: 1rem;
+    background-color: transparent;
 }
 
 .hidden{

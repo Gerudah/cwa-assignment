@@ -16,10 +16,10 @@ const Mode = () => {
           root.classList.remove('dark')
         }
       
-    },  [dark])
+    },[dark])
   return (
     <div className={style.spin} onClick={() => setDark(!dark)} style={{cursor: 'pointer'}}>
-      {dark ? <Image src={Daisy} width={50} height = {50} alt='Daisy'/> : <Image src={Dahlia} width={50} height={50} alt='Dahlia'/>}
+      {dark ? <Image className={style.clear} src={Daisy} width={50} height = {50} alt='Daisy'/> : <Image className={style.clear} src={Dahlia} width={50} height={50} alt='Dahlia'/>}
     </div>
   )
 }

@@ -11,3 +11,11 @@
 .spin:hover {
     animation: spin 4s linear infinite;
 }
+
+.spin {
+    background-color: transparent;
+}
+
+.clear{
+    background-color: transparent;
+}
