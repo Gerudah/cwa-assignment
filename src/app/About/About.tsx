@@ -12,7 +12,7 @@ const About = () => {
         Here is a short tutorial on how to use the tabs web app and a quick run through of the code!
       </p>
       <iframe
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        src="https://www.youtube.com/embed/wxMOg2mPeo8"
         title="How to use Tabs"
         className="flex basis-[45rem] grow"
       />
