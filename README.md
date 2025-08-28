@@ -53,7 +53,7 @@ You will need Node.js and npm (or yarn/pnpm) installed on your machine.
 
 1.  Clone the repository:
     ```sh
-    git clone <your-repository-url>
+    git clone <https://github.com/Gerudah/cwa-assignment>
     ```
 2.  Navigate to the project directory and install NPM packages:
     ```sh
