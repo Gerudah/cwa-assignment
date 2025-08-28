@@ -1,0 +1,16 @@
+.card {
+    margin-inline: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 3rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    padding: 2rem;
+    box-shadow: 0rem 0rem 2rem black;
+}

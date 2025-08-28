@@ -1,19 +1,29 @@
 @import "tailwindcss";
 
-body {
-    background-color: aliceblue;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
+@layer base {
+    body {
+        background-color: aliceblue;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        border-color: black;
+    }
 
-@layer theme {
-    .dark {
+    .dark body:not(.no-dark, .no-dark *) {
         background-color: #1a3657;
         color: white;
+        border-color: white;
     }
 }
 
-main{
+main {
+    min-height: 100vh;
+    display: flex;
     flex: auto;
+    flex-direction: column;
+}
+
+.page-container {
+    flex: auto;
+    display: flex;
     flex-direction: column;
 }

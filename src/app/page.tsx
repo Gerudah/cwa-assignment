@@ -4,14 +4,17 @@ import React, {useState} from 'react'
 import Header from "./components/Header/Header"
 import About from './About/About'
 import WorkInProgress from './WIP/WorkInProgress'
+import Tabs from './Tabs/Tabs'
+import Footer from './components/Footer/Footer'
+
 
 export default function Home() {
 
-  const [isSelected, setSelected] = useState<string>('about')
+  const [isSelected, setSelected] = useState<string>('about') // set/store name of page to be rendered
   function renderPage(){
     switch(isSelected){
       case 'tabs':
-        return <WorkInProgress/>;
+        return <Tabs/>;
       case 'pre-lab':
         return <WorkInProgress/>;
       case 'escape':
@@ -21,13 +24,16 @@ export default function Home() {
       case 'about':
         return <About/>
       default:
-        return <About/>
+        return <About/> //default load the about page
     }
   }
 
-  return (
-    <main>
-      <Header isSelected={isSelected} setSelected={setSelected}/>
-      {renderPage()}
+  return ( //Pass Page selection down to Navbar through Header, render to client
+    <main> 
+      <Header setSelected={setSelected}/>  
+      <div className='page-container'>
+        {renderPage()}
+      </div>
+      <Footer/>
     </main>
 )}
