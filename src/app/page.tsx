@@ -5,6 +5,7 @@ import Header from "./components/Header/Header"
 import About from './About/About'
 import WorkInProgress from './WIP/WorkInProgress'
 import Tabs from './Tabs/Tabs'
+import EscapeRoom from './Escape/EscapeRooom'
 import Footer from './components/Footer/Footer'
 
 
@@ -18,7 +19,7 @@ export default function Home() {
       case 'pre-lab':
         return <WorkInProgress/>;
       case 'escape':
-        return <WorkInProgress/>;
+        return <EscapeRoom/>;
       case 'races':
         return <WorkInProgress/>;
       case 'about':
