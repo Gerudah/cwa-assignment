@@ -22,7 +22,7 @@ function getRandomTasks<T>(array: T[], size: number): T[] {
     return shuffled.slice(0, size);
 }
 
-const GAME_DURATION_SECONDS = 45 //* 60; // 45 minutes
+const GAME_DURATION_SECONDS = 45 * 60; // 45 minutes
 
 // --- Component ---
 

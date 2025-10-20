@@ -13,7 +13,7 @@ export const TASKS: Task[] = [
         description: 'Write a function `fizzbuzz` that prints numbers from 1 to 100. For multiples of 3, print "Fizz". For multiples of 5, print "Buzz". For multiples of both 3 and 5, print "FizzBuzz". The function should return an array of the results.',
         starterCode: `function fizzbuzz() {
     const result = [];
-    // Your code here
+    // Your code here \n //BE SURE TO USE CORRECT CASING "Fizz" "Buzz" "FizzBuzz"
     return result;
 }`,
         validate: (code: string): boolean => {
@@ -40,7 +40,7 @@ export const TASKS: Task[] = [
         title: 'Filter Odd Numbers',
         description: 'Write a function `filterOdd` that iterates through numbers 1 to 100 and returns an array containing only the odd numbers.',
         starterCode: `function filterOdd(numbers) {
-    // Your code here BE SURE TO USE CORRECT CASING "Fizz" "Buzz" "FizzBuzz"
+    // Your code here \n//hint: you will need to return a value that contains your filtered list
     return [];
 }`,
         validate: (code: string): boolean => {
@@ -64,7 +64,7 @@ export const TASKS: Task[] = [
         title: 'Filter Even Numbers',
         description: 'Write a function `filterEven` that iterates through numbers 1 to 100 and returns an array containing only the even numbers.',
         starterCode: `function filterEven(numbers) {
-    // Your code here
+    // Your code here \n //hint: you will need to return a value that contains your filtered list
     return [];
 }`,
         validate: (code: string): boolean => {
