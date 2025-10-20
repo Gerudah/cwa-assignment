@@ -38,9 +38,9 @@ export const TASKS: Task[] = [
     {
         id: 'odd-split',
         title: 'Filter Odd Numbers',
-        description: 'Write a function `filterOdd` that takes an array of numbers and returns a new array containing only the odd numbers.',
+        description: 'Write a function `filterOdd` that iterates through numbers 1 to 100 and returns an array containing only the odd numbers.',
         starterCode: `function filterOdd(numbers) {
-    // Your code here
+    // Your code here BE SURE TO USE CORRECT CASING "Fizz" "Buzz" "FizzBuzz"
     return [];
 }`,
         validate: (code: string): boolean => {
@@ -62,7 +62,7 @@ export const TASKS: Task[] = [
     {
         id: 'even-split',
         title: 'Filter Even Numbers',
-        description: 'Write a function `filterEven` that takes an array of numbers and returns a new array containing only the even numbers.',
+        description: 'Write a function `filterEven` that iterates through numbers 1 to 100 and returns an array containing only the even numbers.',
         starterCode: `function filterEven(numbers) {
     // Your code here
     return [];
