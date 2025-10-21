@@ -6,13 +6,20 @@
     margin-right: 10%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
     gap: 3rem;
     border-radius: 1rem;
     background-color: transparent;
     padding: 2rem;
     box-shadow: 0rem 0rem 2rem black;
+}
+
+.center {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+    text-align: center;
 }
 
 .IdleHeader {
@@ -37,16 +44,31 @@
     }
 }
 
+@keyframes rainbowScroll2 {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 .description {
     text-align: center;
     font-size: larger;
     font-weight: 600;
 }
 
+.button{
+    margin-top: 20px;
+}
+
 .button:hover {
     cursor: pointer;
-    background: lightslategray;
     border-style: inset;
+    background: linear-gradient(90deg, white, silver, white, silver, silver, silver);
+    background-size: 250% 50%;
+    animation: rainbowScroll 0.4s linear forwards;
 }
 
 .playButton {
@@ -91,29 +113,28 @@
 }
 
 .replayButton {
-    border-color: black;
+    border-style: outset;
     border-width: 0.2em;
     border-radius: 2em;
     width: 15em;
-
 }
 
 .againButton {
-    border-color: black;
+    border-style: outset;
     border-width: 0.2em;
     border-radius: 2em;
     width: 15em;
 }
 
 .restartButton {
-    border-color: black;
+    border-style: outset;
     border-width: 0.2em;
     border-radius: 2em;
     width: 15em;
 }
 
 .submitButton {
-    border-color: black;
+    border-style: outset;
     border-width: 0.2em;
     border-radius: 2em;
     width: 15em;
@@ -125,7 +146,7 @@
     display: flex;
     width: 1024px;
     height: 1024px;
-    margin-left: 25%;
+    margin-top: -50px;
 }
 
 .roomBackground {
@@ -141,7 +162,6 @@
 .Chest:hover {
     transform: scale(1.15) translateX(10px);
     cursor: pointer;
-    
 }
 
 .book {
@@ -154,7 +174,6 @@
 .book:hover {
     transform: scale(1.15);
     cursor: pointer;
-    
 }
 
 .Clock {
@@ -166,7 +185,6 @@
 .Clock:hover {
     transform: scale(1.15);
     cursor: pointer;
-    /**transform: translateX(1px);**/
 }
 
 .Computer {
@@ -179,7 +197,6 @@
 .Computer:hover {
     transform: scale(1.15);
     cursor: pointer;
-  
 }
 .Cube {
     position: absolute;
@@ -191,7 +208,6 @@
 .Cube:hover {
     transform: scale(1.15) translateX(5px);
     cursor: pointer;
-    
 }
 
 .drawer {
@@ -204,7 +220,6 @@
 .drawer:hover {
     transform: scale(1.15);
     cursor: pointer;
-   
 }
 
 .drawer2 {
@@ -217,7 +232,6 @@
 .drawer2:hover {
     transform: scale(1.15);
     cursor: pointer;
-    
 }
 
 .drawer3 {
@@ -232,8 +246,8 @@
     cursor: pointer;
 }
 
-.solvedItem:hover{
+.solvedItem:hover {
     pointer-events: "None";
     transform: none;
-    cursor:default
+    cursor: default;
 }

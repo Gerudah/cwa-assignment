@@ -178,8 +178,9 @@ export default function EscapeRoom() {
     if (gameState === 'lost') {
         return (
             <div className={Style.card}>
-                <h2>Time's Up!</h2>
-                <p>You didn't manage to escape in time.</p>
+                <h2 className={Style.center}
+                >Time's Up!</h2>
+                <p className={Style.center}>You didn't manage to escape in time.</p>
                 <button  className={`${Style.restartButton} ${Style.button}`} onClick={startGame}>Try Again</button>
             </div>
         );
@@ -191,6 +192,7 @@ export default function EscapeRoom() {
             <div>
                 <h3>Time Remaining: {formatTime(timeLeft)}</h3>
                 <h3>Puzzles Solved: {keys.length} / 4</h3>
+                <button  className={`${Style.restartButton} ${Style.button}`} onClick={startGame}>Regenerate</button>
             </div>
             <hr />
 
