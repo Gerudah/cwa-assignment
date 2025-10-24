@@ -5,7 +5,6 @@ import Image from 'next/image';
 import CodeEditor from './CodeEditor';
 import { TASKS, Task } from './Tasks'; // Corrected path
 import Style from './EscapeRoom.module.css'; // Corrected path
-import { transform } from 'next/dist/build/swc/generated-native';
 
 type TaskWithStatus = Task & { solved: boolean };
 
@@ -168,7 +167,7 @@ export default function EscapeRoom() {
         const timeTaken = GAME_DURATION_SECONDS - timeLeft;
         return (
             <div className={Style.card}>
-                <h2>Congratulations! You've Escaped!</h2>
+                <h2>Congratulations! You&apos;ve Escaped!</h2>
                 <p>Total time taken: {formatTime(timeTaken)}</p> 
                 <button  className={`${Style.againButton} ${Style.button}`} onClick={startGame}>Play Again</button>
             </div>
@@ -179,8 +178,8 @@ export default function EscapeRoom() {
         return (
             <div className={Style.card}>
                 <h2 className={Style.center}
-                >Time's Up!</h2>
-                <p className={Style.center}>You didn't manage to escape in time.</p>
+                >Time&apos;s Up!</h2>
+                <p className={Style.center}>You didn&apos;t manage to escape in time.</p>
                 <button  className={`${Style.restartButton} ${Style.button}`} onClick={startGame}>Try Again</button>
             </div>
         );
