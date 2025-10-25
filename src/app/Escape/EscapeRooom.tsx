@@ -8,14 +8,7 @@ import Style from './EscapeRoom.module.css'; // Corrected path
 
 type TaskWithStatus = Task & { solved: boolean };
 
-// --- Helper Functions ---
 
-/**
- * Shuffles an array in place and returns a new array of a specified size.
- * @param array The array to shuffle.
- * @param size The number of elements to return.
- * @returns A new array with `size` random elements.
- */
 function getRandomTasks<T>(array: T[], size: number): T[] {
     const shuffled = [...array].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, size);
